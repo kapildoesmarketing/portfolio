@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta name="google-adsense-account" content="ca-pub-7192269032996448">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7192269032996448"
-     crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapil Does Marketing (KDM)</title>
-    <link rel="icon" type="image/png" href="https://kapildoesmarketing.github.io/portfolio/favicon.png">
+    <link rel="icon" type="image/png" href="https://kapildoesmarketing.github.io/portfolio/logo.png">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <style>
         /* Custom CSS for the logo slider */
@@ -19,6 +21,7 @@
             0% {
                 transform: translateX(0);
             }
+
             100% {
                 transform: translateX(calc(-250px * 8));
                 /* 8 is the number of original logos */
@@ -86,6 +89,48 @@
             transform: scale(1.1);
             cursor: pointer;
         }
+
+        /* Footer Styles */
+        .footer-social-icon {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-social-icon:hover {
+            color: #adb5bd;
+        }
+
+        .contact-card {
+            background-color: #212529; /* Slightly different dark shade */
+            border: 1px solid #495057;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            height: 100%;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-card a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card i {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ced4da;
+        }
+
     </style>
 </head>
 
@@ -95,9 +140,11 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="https://kapildoesmarketing.github.io/portfolio/logo.png" alt="KDM Logo" style="height: 40px;">
+                    <img src="https://kapildoesmarketing.github.io/portfolio/logo.png" alt="KDM Logo"
+                        style="height: 40px;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -131,13 +178,16 @@
         <section id="home" class="py-5">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-md-1 order-2">
                         <p class="lead">Hello, I am</p>
                         <h1 class="display-1 fw-bold">Kapil Pidhwani</h1>
-                        <p class="fs-5 mt-3">From acing customer satisfaction at Amazon to now exploring the exciting universe of Digital Marketing. I'm all about connecting, creating, and making things click online. Passionate about SEO, social media, and crafting campaigns that resonate.</p>
+                        <p class="fs-5 mt-3">From acing customer satisfaction at Amazon to now exploring the exciting
+                            universe of Digital Marketing. I'm all about connecting, creating, and making things click
+                            online. Passionate about SEO, social media, and crafting campaigns that resonate.</p>
                     </div>
-                    <div class="col-md-6 text-center">
-                        <img src="http://kapildoesmarketing.github.io/portfolio/Hello.png" class="img-fluid" alt="Animated character of Kapil Pidhwani">
+                    <div class="col-md-6 text-center order-md-2 order-1">
+                        <img src="http://kapildoesmarketing.github.io/portfolio/Hello.png" class="img-fluid"
+                            alt="Animated character of Kapil Pidhwani">
                     </div>
                 </div>
             </div>
@@ -147,23 +197,43 @@
                 <div class="logo-slider">
                     <div class="slide-track">
                         <!-- Original Logos -->
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png" alt="Google Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png" alt="Meta Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png" alt="Google Analytics"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png" alt="Canva"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png" alt="Google Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png" alt="Meta Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png" alt="Google Analytics"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png" alt="Canva"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png"
+                                alt="Google Ads"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png"
+                                alt="Meta Ads"></div>
+                        <div class="slide"><img
+                                src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png"
+                                alt="Google Analytics"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png"
+                                alt="Canva"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png"
+                                alt="Google Ads"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png"
+                                alt="Meta Ads"></div>
+                        <div class="slide"><img
+                                src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png"
+                                alt="Google Analytics"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png"
+                                alt="Canva"></div>
                         <!-- Duplicated Logos for seamless loop -->
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png" alt="Google Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png" alt="Meta Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png" alt="Google Analytics"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png" alt="Canva"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png" alt="Google Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png" alt="Meta Ads"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png" alt="Google Analytics"></div>
-                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png" alt="Canva"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png"
+                                alt="Google Ads"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png"
+                                alt="Meta Ads"></div>
+                        <div class="slide"><img
+                                src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png"
+                                alt="Google Analytics"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png"
+                                alt="Canva"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Google_Ads.png"
+                                alt="Google Ads"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Meta_Ads.png"
+                                alt="Meta Ads"></div>
+                        <div class="slide"><img
+                                src="https://kapildoesmarketing.github.io/portfolio/Google_Analytics.png"
+                                alt="Google Analytics"></div>
+                        <div class="slide"><img src="https://kapildoesmarketing.github.io/portfolio/Canva.png"
+                                alt="Canva"></div>
                     </div>
                 </div>
             </div>
@@ -175,11 +245,52 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Get in Touch -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold">Get in Touch</h2>
+                    <p class="text-white-50">
+                        Ready to collaborate and bring your digital ideas to life. Let's connect and discuss how we can create impactful marketing strategies together.
+                    </p>
+                    <div class="mt-4">
+                        <a href="tel:+918329870799" class="footer-social-icon"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/+918329870799" target="_blank" class="footer-social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://linkedin.com/in/kapilpidhwani" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/kapildoesmarketing" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Cards -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <div class="contact-card text-center">
+                                <i class="fas fa-envelope"></i>
+                                <h5 class="mb-2">Email Me</h5>
+                                <a href="mailto:kapildoesmarketing@gmail.com">kapildoesmarketing@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="contact-card text-center">
+                                <i class="fas fa-link"></i>
+                                <h5 class="mb-2">My Links</h5>
+                                <a href="https://kapildoesmarketing.github.io/portfolio/links.html" target="_blank">Link Hub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
